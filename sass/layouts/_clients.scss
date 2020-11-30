@@ -8,10 +8,17 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:not(:last-child) {
         margin-right: 30px;
     }
   
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
 }
 
 
@@ -35,3 +42,4 @@
 .flexsvg-linc:focus .client-svg {
    fill: $accent-color;
 }
+
